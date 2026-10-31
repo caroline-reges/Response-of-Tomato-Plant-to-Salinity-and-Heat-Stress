@@ -18,6 +18,8 @@ But the paper mentions a different salinity level than the dataset does, so I'm 
 
 ## Data cleaning and EDA
 
+The first thing I need to do is clean my dataset, because it includes samples that I won't need. 
+
 
 Does it include clear explanations on how and why a cleaning is performed? Depending on your data, some examples of EDA might include:
 

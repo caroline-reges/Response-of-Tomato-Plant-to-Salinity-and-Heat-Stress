@@ -6,6 +6,12 @@ __pycache__/
 # C extensions
 *.so
 
+# Stuff Caroline Added
+.ipynb_checkpoints/
+my-env/
+__pycache__/
+*.pyc
+
 # Distribution / packaging
 .Python
 build/

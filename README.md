@@ -1,20 +1,23 @@
-# Response of Atlantic Salmon to Hypoxia and Temperature
+# Response of Tomato to Salinity and Heat Stress
 
 ## Project topic
 
-This project studies the effect of hypoxia and temperature in Atlantic Salmon. The dataset is from the Gene Expression Omnibus:
+This project studies the effect of salinity and heat stress on tomato plants. The dataset is from the Gene Expression Omnibus:
 
-https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE107769
+https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE245759
 
-This is a bulk RNA seq dataset, which was tested on 80 different fish samples. It has the expression of 20,000+ genes for each sample
+This is a bulk RNA seq dataset, which was tested on 24 different samples. It has the expression of 34,000 genes in the 24 samples. The salinity treatment exposed the plants to 150 mM salt, and the heat treatment exposed plants to 37°C temperatures. They had a control group, a salinity group, a heat group, and a salinity + heat group. This dataset also includes samples who were treated with a bacteria, Pseudomonas putida, but for simplicity I will exclude those samples. That leaves 12 of the original 24 samples. 
 
-Project topic: (5 pts)
-Is there a clear explanation about what this project is about? Does it state clearly which type of problem?
-Does it state the motivation or the goal (or why it’s important) clearly?
-Data: (5 pts)
-Is data source properly quoted and described? (including links, brief explanations)
-Do they explain the data description properly?
-Data cleaning and EDA (10 pts)
+What I'd like to do is use PCA and hierarchical clustering to see what are the main differences between the treatments, and if salinity or temperature have a stronger effect on gene expression among the tomatoes. I should be able to visually see if salinity has a stronger effect, heat has a stronger effect, or if they both have strong effects. I am interested in this, because I have performed RNAseq experiments in the past on mice where one treatment has a much more powerful effect on the samples than another treatment, to the point you cannot see the effect of the other treatment at all on my PCA plot. 
+
+I believe the dataset is associated with this paper: 
+
+https://academic.oup.com/plphys/article/199/3/kiaf519/8286221
+
+But the paper mentions a different salinity level than the dataset does, so I'm not completely sure. I will use it as a reference to help confirm I trust my results
+
+## Data cleaning and EDA
+
 
 Does it include clear explanations on how and why a cleaning is performed? Depending on your data, some examples of EDA might include:
 

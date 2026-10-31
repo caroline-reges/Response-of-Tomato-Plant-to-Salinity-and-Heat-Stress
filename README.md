@@ -18,7 +18,7 @@ But the paper mentions a different salinity level than the dataset does, so I'm 
 
 ## Data cleaning and EDA
 
-The first thing I need to do is clean my dataset, because it includes samples that I won't need. 
+The first thing I need to do is clean my dataset, because it includes samples that I won't need. This experiment includes plants that were treated with Pseudomonas putida, which is a bacteria that helps improve crop health and stress resistance. I'm sure that would be interesting to look at, to see how much it helps resist the stressors of heat and salinity, but for now I just want to make sure I can get my models to work, so I wanted to keep the project simple and not include that factor. 
 
 
 Does it include clear explanations on how and why a cleaning is performed? Depending on your data, some examples of EDA might include:

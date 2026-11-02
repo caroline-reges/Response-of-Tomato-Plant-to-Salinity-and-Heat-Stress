@@ -39,6 +39,16 @@ Next, I wanted to look at the distribution of the data, to see if the data neede
 ![Data Distribution](images/data_distribution.png)
 
 
+## Model Building / Model Training
+
+
+The first model I wanted to try with my dataset was a PCA plot. I made a PCA model with two principal components. 
+
+![Initial PCA](images/initial_pca.png)
+
+
+
+When I go do PCA, I should test my dataset on both the log transformed and original dataset.
 
 
 
@@ -47,18 +57,6 @@ Next, I wanted to look at the distribution of the data, to see if the data neede
 
 
 
-
-Does it include clear explanations on how and why a cleaning is performed? Depending on your data, some examples of EDA might include:
-
-Tabulated data cleaning examples: Inspect null values and drop or impute.
-
-User/product ratings data examples: Basic EDAs on user count, product count, and basic data cleaning/processing (e.g. proper data types and treating null values)
-
-Text data examples: Basic EDA such as word count, histogram etc and basic data cleaning such as stop words removal, Explaining word embedding methods: When you evaluate, the score is based on how they demonstrated understanding by explaining the concepts and giving reasonings why they chose the methods/techniques etc, but not based on just complexity of the model or technique or just performance alone.
-
-Image or sound data examples: Pixel value count or histogram, spectral analysis such as power spectrum or frequency analysis to make feature vectors, etc
-
-Does it include clear explanations on how and why an certain analysis (EDA) is performed?
 
 Does it have proper visualization?
 

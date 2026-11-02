@@ -41,14 +41,18 @@ Next, I wanted to look at the distribution of the data, to see if the data neede
 
 ## Model Building / Model Training
 
+### PCA
 
 The first model I wanted to try with my dataset was a PCA plot. I made a PCA model with two principal components. 
 
 ![Initial PCA](images/initial_pca.png)
 
+I wanted to see how much of the variance in the data is explained by these two principal components, and the model showed that principal component 1 explained 29% of the variance, and principal component 2 explained 17% of the variance. Combined, these components explain 46% of the variance in the dataset.
 
+I can see that the datapoints separated by the first principal component are separated by heat stress, while the second principal component is separated by salinity. This suggests that heat stress could have a stronger effect on gene expression than salinity, but I want to further confirm this using hierarchical clustering and a heatmap. 
 
-When I go do PCA, I should test my dataset on both the log transformed and original dataset.
+### Heatmap
+
 
 
 

@@ -16,9 +16,25 @@ https://academic.oup.com/plphys/article/199/3/kiaf519/8286221
 
 But the paper mentions a different salinity level than the dataset does, so I'm not completely sure. I will use it as a reference to help confirm I trust my results
 
-## Data cleaning and EDA
+## Data Cleaning and EDA
 
 The first thing I need to do is clean my dataset, because it includes samples that I won't need. This experiment includes plants that were treated with Pseudomonas putida, which is a bacteria that helps improve crop health and stress resistance. I'm sure that would be interesting to look at, to see how much it helps resist the stressors of heat and salinity, but for now I just want to make sure I can get my models to work, so I wanted to keep the project simple and not include that factor. 
+
+The samples that I want to keep are:
+
+Control: CT-1, CT-2, CT-3
+
+Salinity: S-1, S-2, S-3
+
+Heat Stress: HS-1, HS-2, HS-3
+
+Salinity + Heat Stress: S+HS-1, S+HS-2, S+HS-3
+
+Usually RNAseq data needs to be normalized, to eliminate technical or biological biases. The dataset provided are the mean normalized counts, so I can skip this step. 
+
+
+
+
 
 
 Does it include clear explanations on how and why a cleaning is performed? Depending on your data, some examples of EDA might include:

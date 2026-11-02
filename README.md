@@ -32,6 +32,17 @@ Salinity + Heat Stress: S+HS-1, S+HS-2, S+HS-3
 
 Usually RNAseq data needs to be normalized, to eliminate technical or biological biases. The dataset provided are the mean normalized counts, so I can skip this step. 
 
+The next thing I wanted to do was filter the dataset for genes that have low expression. One common way to do this is to only keep the genes where the count value is greater than 10 in 25% of the samples. This is important, because a gene can have expression levels that are significantly different between groups, but in reality, the gene expression levels are so low, that it doesn't make that much of a difference biologically. This filtering step brought the dataset from 34,000 genes down to 20,000 genes. 
+
+Next, I wanted to look at the distribution of the data, to see if the data needed to be log transformed. I saw that the data was very skewed with a few datapoints that were very large, and the rest were very small, so I decided to log transform the data. 
+
+![Data Distribution](images/data_distribution.png)
+
+
+
+
+
+
 
 
 

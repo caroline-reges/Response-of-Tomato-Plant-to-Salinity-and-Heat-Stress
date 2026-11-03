@@ -49,7 +49,12 @@ The first model I wanted to try with my dataset was a PCA plot. I made a PCA mod
 
 I wanted to see how much of the variance in the data is explained by these two principal components, and the model showed that principal component 1 explained 29% of the variance, and principal component 2 explained 17% of the variance. Combined, these components explain 46% of the variance in the dataset.
 
-I can see that the datapoints separated by the first principal component are separated by heat stress, while the second principal component is separated by salinity. This suggests that heat stress could have a stronger effect on gene expression than salinity, but I want to further confirm this using hierarchical clustering and a heatmap. 
+I can see that the datapoints separated by the first principal component are separated by heat stress, while the second principal component is separated by salinity. This suggests that heat stress could have a stronger effect on gene expression than salinity, but I want to further confirm this by making a 3D PCA plot, by adding a third principal component. 
+
+![3D PCA](images/3d_pca.png)
+
+The first principal component, which explains 29% of the variance, separates the HS and S+HS samples from the control. The second principal component, which explains 17% of the variance, is what separates the S+HS samples from the control. The third principal component, which explains 12% of the variance, is what separates S and S+HS from the control. So this still suggests that heat stress contributes the strongest to the variation in gene expression, but further testing is needed to conclude which treatment has the strongest effect. 
+
 
 ### Heatmap
 
@@ -57,7 +62,14 @@ The second model I wanted to try with my dataset was hierarchical clustering, us
 
 <img src="images/initial_heatmap.png" alt="Initial Heatmap" width="600">
 
-Based on this initial heatmap, I can see that 
+Based on this initial heatmap, I can see some clear differences between the groups, but the differences are not as clear as I'd like them to be. This is partially because there seems to be a lot of variability between samples of the same treatment. 
+
+I can see that there are some clusters appearing on the heatmap, but they are hard to view, so I wanted to make a larger version of dendrogram. 
+
+<img src="images/dendrogram.png" alt="dendrogram" width="600">
+
+
+
 
 
 

@@ -38,20 +38,19 @@ Next, I wanted to look at the distribution of the data, to see if the data neede
 
 ![Data Distribution](images/data_distribution.png)
 
-
 ## Model Building / Model Training
 
 ### PCA
 
 The first model I wanted to try with my dataset was a PCA plot. I made a PCA model with two principal components. 
 
-![Initial PCA](images/initial_pca.png)
+<img src="images/initial_pca.png" alt="Initial PCA" width="600">
 
 I wanted to see how much of the variance in the data is explained by these two principal components, and the model showed that principal component 1 explained 29% of the variance, and principal component 2 explained 17% of the variance. Combined, these components explain 46% of the variance in the dataset.
 
 I can see that the datapoints separated by the first principal component are separated by heat stress, while the second principal component is separated by salinity. This suggests that heat stress could have a stronger effect on gene expression than salinity, but I want to further confirm this by making a 3D PCA plot, by adding a third principal component. 
 
-![3D PCA](images/3d_pca.png)
+<img src="images/3d_pca.png" alt="3D PCA" width="600">
 
 The first principal component, which explains 29% of the variance, separates the HS and S+HS samples from the control. The second principal component, which explains 17% of the variance, is what separates the S+HS samples from the control. The third principal component, which explains 12% of the variance, is what separates S and S+HS from the control. So this still suggests that heat stress contributes the strongest to the variation in gene expression, but further testing is needed to conclude which treatment has the strongest effect. 
 

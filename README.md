@@ -53,7 +53,11 @@ I can see that the datapoints separated by the first principal component are sep
 
 ### Heatmap
 
+The second model I wanted to try with my dataset was hierarchical clustering, using a heatmap. 
 
+![Initial Heatmap](images/initial_heatmap.png)
+
+Based on this initial heatmap, I can see that 
 
 
 

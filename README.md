@@ -60,13 +60,13 @@ The first principal component, which explains 29% of the variance, separates the
 
 The second model I wanted to try with my dataset was hierarchical clustering, using a heatmap. 
 
-<img src="images/initial_heatmap.png" alt="Initial Heatmap" width="600">
+<img src="images/initial_heatmap.png" alt="Initial Heatmap" width="400">
 
 Based on this initial heatmap, I can see some clear differences between the groups, but the differences are not as clear as I'd like them to be. This is partially because there seems to be a lot of variability between samples of the same treatment. 
 
 I can see that there are some clusters appearing on the heatmap, but they are hard to view, so I wanted to make a larger version of dendrogram. 
 
-<img src="images/dendrogram.png" alt="dendrogram" width="600">
+<img src="images/dendrogram.png" alt="dendrogram" width="400">
 
 
 

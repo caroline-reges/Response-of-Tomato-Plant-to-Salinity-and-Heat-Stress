@@ -58,7 +58,7 @@ The first principal component, which explains 29% of the variance, separates the
 
 ### Heatmap
 
-The second model I wanted to try with my dataset was hierarchical clustering, using a heatmap. 
+The second model I wanted to try with my dataset was hierarchical clustering, using a heatmap of the 1,000 most variable genes. 
 
 <img src="images/initial_heatmap.png" alt="Initial Heatmap" width="400">
 
@@ -69,32 +69,33 @@ I can see that there are some clusters appearing on the heatmap, but they are ha
 <img src="images/dendrogram.png" alt="dendrogram" width="400">
 
 
+There is a group of genes near the top of the heatmap that has relatively higher expression in the control and salinity group, but relatively lower expression in the salinity + heat stress group, and the heat stress group. If you look at the dendrogram, that specific cluster is only two levels down, meaning that cluster is very different from the other clusters. 
+
+I am also seeing a group of genes in the middle of the heatmap that has relatively lower expression in the control and salinity groups, but relatively higher expression in the salinity + heat stress group and the heat stress group. This group is only four levels down the dendrogram, so it is also very different from the other clusters. 
+
+Together, these clusters account for over one-third of the genes displayed on the heatmap, suggesting that heat stress is associated with substantial changes in gene expression. 
+
+I was curious if changing the clustering methods would change how I view my results, so I tried three additional clustering methods. The default for clustermap is method = average and metric = euclidean. 
+
+method = ward, metric = euclidean
+
+<img src="images/ward_euclidean_heatmap.png" alt="heatmap 2" width="400">
+
+method = average, metric = correlation
+
+<img src="images/average_correlation_heatmap.png" alt="heatmap 3" width="400">
+
+method = complete, metric = correlation
+
+<img src="images/complete_correlation_heatmap.png" alt="heatmap 4" width="400">
+
+The dataset is messy, so it is difficult to tell if any of these heatmaps are much clearer or easier to read than the original heatmap. I find the ward, euclidean dendrogram easiest to read. But on all of the heatmaps, I can clearly see the group of genes that are unique to the plants treated with heat stress or salinity + heat stress. 
 
 
+## Discussion and Conclusion
 
+For this project, I wanted to see how if heat stress or salinity had a larger effect on gene expression in tomato plants. Based on these preliminary results, I would believe that heat stress has a larger effect than salinity. In the PCA plot, the first two principal components separated the heat stress samples from the control, while the third principal component separated the salinity sample from the control. After looking at the heatmaps, I can see a distinct gene expression pattern in the heat stress samples compared to the salinity treatments. 
 
+This data alone is not enough to make the conclusion that heat stress has a larger effect. I would need to perform further analysis to see what are the genes that are differentially expressed in the heat stress samples compared to the controls, and read about them to see how important these genes are to the function of the plant. 
 
-
-
-
-
-Does it have proper visualization?
-
-Does it have proper analysis? E.g. histogram, correlation matrix, heatmap, plots etc.
-
-Does it have conclusions or discussions? E.g. the EDA summary, findings, discussing foreseen difficulties and/or analysis strategy.
-
-Model building / Model choice (15 pts)
-How many models have been used and compared? Any reasonings for model choice?
-
-Model training (15 pts)
-Show model training procedure including hyper parameter tuning. Show any procedure for measuring train and/or test performances.
-
-Results and Analysis: (20 pts)
-
-Does it have a summary of results and analysis?
-Does it have a proper visualization? (e.g. tables, graphs/plots, heat maps, statistics summary with interpretation etc)
-Does it use different kinds of evaluation metric properly? Also does it explain why they chose the metric?
-Does it iterate the training and evaluation process and improve the performance? Does it address selecting features through the iteration process?
-Did the author compare the results from the multiple models and did appropriate comparison?
-Discussion and Conclusion: (10 pts) Add your discussion on the results, ways to improve the results
+It would also be interesting to look at this dataset in other plant types, to see which plants respond similarly. It could be that all plants in the same family (the nightshade family) also have a stronger response to heat stress than salinity. But instead, it could be that plants that grow on vines, like cucumbers, have a stronger reponse to heat stress than salinity. 
